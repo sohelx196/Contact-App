@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inputs{
+    @apply bg-transparent border rounded-md m-3 p-3 text-white
+}
