@@ -1,28 +1,28 @@
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { Header } from "./component/Header";
+import { SideBar } from "./component/SideBar";
+import Footer from "./features/footer/Footer";
 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Header } from './component/Header'
-import { SideBar } from './component/SideBar'
-
-import InputFiledCalling from './component/InputFiledCalling'
-
-
+import Login from "./features/login/Login";
+import { UserDetail } from "./component/UserDetail";
+import Contact from "./features/contact/Contact";
 
 function App() {
- 
   return (
     <>
+      <Header />
 
-      <Header/>
-      <div className='m-4'>
-      <SideBar/>        
-     <InputFiledCalling/>                         
-                                   
-      </div>
-  
+      <div className="flex">
+        <SideBar />
+        <div className="w-full h-screen p-8">
+             
+        </div>
+      </div>    
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

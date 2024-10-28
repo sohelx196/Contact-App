@@ -1,10 +1,9 @@
-import { PropsUserProfile } from "./component/PropsUserProfile";
 
 
-export function  Button() {
+export function  Button({label}) {
   return (
     <>
-     <button>Submit</button>
+       <button className="text-sm bg-gray-800 text-white p-4">{label}</button>
     </>
   );
 }

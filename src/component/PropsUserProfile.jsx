@@ -1,4 +1,3 @@
-import { InputForm } from "./InputForm";
 
 
 export function PropsUserProfile(props) {
@@ -16,15 +15,13 @@ export function PropsUserProfile(props) {
             <div className='items-center'>
               <img src={profile} alt="User Image" className='rounded-lg h-w-9 w-9'/>    
             </div>
-
-
+            
             <div className="mt-3">
                 <h6>Username : {username} </h6>
             </div>
             <div>
                 <h6>Contact : {contact} </h6>
             </div>
-        
          </div> 
     
     </>

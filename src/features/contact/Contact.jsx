@@ -1,14 +1,18 @@
 import React from 'react'
 import { UserDetail } from '../../component/UserDetail'
+import { Button } from '../../component/Button'
 
-function Contact(props) {
-    const addContact = props.addContact;
+function Contact() {
+  
   return (
     <div>
-    <button className='border border-blue-400 bg-blue-400 p-2 text-white'>{addContact}</button>
         <div>
-        <UserDetail/>
+          <UserDetail/>
         </div>
+
+       <div>
+        {/* Button here */}
+       </div>
 
     </div>
   )
