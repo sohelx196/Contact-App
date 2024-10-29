@@ -5,9 +5,7 @@ import { Header } from "./component/Header";
 import { SideBar } from "./component/SideBar";
 import Footer from "./features/footer/Footer";
 
-import Login from "./features/login/Login";
-import { UserDetail } from "./component/UserDetail";
-import Contact from "./features/contact/Contact";
+import { Outlet} from "react-router-dom";
 
 function App() {
   return (
@@ -17,7 +15,7 @@ function App() {
       <div className="flex">
         <SideBar />
         <div className="w-full h-screen p-8">
-             
+          <Outlet/>
         </div>
       </div>    
       <Footer />

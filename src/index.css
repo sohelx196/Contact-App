@@ -5,3 +5,7 @@
 .inputs{
     @apply bg-transparent border rounded-md m-3 p-3 text-white
 }
+
+.Active{
+    @apply bg-cyan-950  transition-all  rounded-lg p-2  
+}
