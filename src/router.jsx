@@ -6,6 +6,7 @@ import Contact from "./features/contact/Contact";
 import { Login } from "./features/login/Login";
 import App from "./App";
 import { AddContactForm } from "./features/contact/AddContactForm";
+import { UserDetail } from "./component/UserDetail";
 
 export const router = createBrowserRouter([
      {
@@ -20,6 +21,11 @@ export const router = createBrowserRouter([
                 path : "contact",
                 element : <Contact/>,
                   children:[
+
+                    {
+                        path :"showContact",
+                        element:<UserDetail/>,
+                    },
                     {
                         path :"addUser",
                         element:<AddContactForm/>,
