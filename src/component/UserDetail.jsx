@@ -6,7 +6,7 @@ import dp from '../assets/messi.jpeg'
 export function  UserDetail() {
   return (
   
-    <div className='flex w-full  '> 
+    <div className='flex w-full'> 
   
         <PropsUserProfile profile={dp} username="Optimus" contact="99999"/>
         <PropsUserProfile profile={dp} username="Intersteller" contact="7"/>

@@ -7,14 +7,18 @@ import { Login } from "./features/login/Login";
 import App from "./App";
 import { AddContactForm } from "./features/contact/AddContactForm";
 import { UserDetail } from "./component/UserDetail";
+import TodoApp from "./features/todo/TodoApp";
+
+import AddTodoForm from "./features/todo/AddTodoForm";
+import TasbihOrJaap from "./features/Jaap And Tasbih/TasbihOrJaap";
 
 export const router = createBrowserRouter([
      {
-        path : "/",
+        path : "",
         element : <App/>,
         children: [
             {
-                path : "home",
+                path : "",
                 element : <Home/>,
             },
             {
@@ -32,6 +36,23 @@ export const router = createBrowserRouter([
                     },
                 ]
             },
+
+            {
+                path : "todoApp",
+                element : <TodoApp/>,
+                children : [
+
+                    {
+                        path : 'addTodo',
+                        element : <AddTodoForm/>
+                    },
+                ]
+            },
+
+            {
+                path : "tasbih",
+                element : <TasbihOrJaap/> ,
+            }
             
         ]
     },
@@ -40,22 +61,3 @@ export const router = createBrowserRouter([
         element : <Login/>,
     },
 ])
-
-
-
-
-
-    // {
-    //     path: "/",
-    //     element: <Home/>
-    // },
-    
-    // {
-    //     path: "contact",
-    //     element: <Contact/> ,
-    // },
-    // {
-    //     path: "login",
-    //     element: <Login/>
-    // }
-        

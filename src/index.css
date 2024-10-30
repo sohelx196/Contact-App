@@ -9,7 +9,3 @@
 .Active{
     @apply bg-cyan-950  transition-all  rounded-lg p-2  
 }
-
-.contactLink{
-    @apply bg-zinc-500
-}

@@ -10,16 +10,16 @@ function Contact() {
 
       <div>
       <div className="text-center">
-        <NavLink to="showContact" className={({isActive}) => isActive ? "contactLink" : ""}>
+        <NavLink to="showContact">
           <button className="bg-transparent text-slate-300 border border-y-white rounded-md p-3 m-3 hover:border-gray-800 hover:transition-all ">
-            Show Contact 
+            Show Contact
           </button> 
         </NavLink>
       </div>
       </div>
 
       <div className="text-center">
-        <NavLink to="addUser"  className={({isActive}) => isActive ? "contactLink" : ""}>
+        <NavLink to="addUser">
           <button className="bg-transparent text-slate-300 border border-y-white rounded-md p-3 m-3 hover:border-gray-800 hover:transition-all ">
             Add More 
           </button> 
@@ -27,7 +27,7 @@ function Contact() {
       </div>
       </div>
     
-      <div>
+      <div className="my-6">
         <Outlet />
       </div>
     </div>
