@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 function TasbihOrJaap() {
-  const [initialVal, newJaap] = useState(0);
+  const [initialVal, setewJaap] = useState(0);
   const jaapVal = () => {
-    newJaap(initialVal + 1);
+    setewJaap(initialVal + 1);
   };
 
   const missedJaap = () => {
-      newJaap(initialVal - 1);
+      setewJaap(initialVal - 1);
   }
   
   return (
@@ -31,7 +31,7 @@ function TasbihOrJaap() {
         </button>
       </div>
 
-      <div className="m- text-center">
+      <div className="m-9 text-center">
         <p className="text-white text-center">You have Prayed {initialVal} times</p>
         <h1 className="text-slate-200 text-5xl ">{initialVal}</h1>
       </div>  
