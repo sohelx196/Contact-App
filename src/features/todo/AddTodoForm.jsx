@@ -5,7 +5,7 @@ function AddTodoForm() {
   return (
     <div>
         
-       <form action="#" className='rounded-lg w-max p-8 border border-blue-200'>
+       <form action="#" className='rounded-lg w-max p-8 border border-gray-50'>
         <div>
           {/* <textarea name="" id="" className='bg-transparent border text-slate-100'></textarea> */}
            <InputField type="text" placeholder="Create Your Todo"/>

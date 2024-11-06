@@ -8,9 +8,9 @@ import App from "./App";
 import { AddContactForm } from "./features/contact/AddContactForm";
 import { UserDetail } from "./component/UserDetail";
 import TodoApp from "./features/todo/TodoApp";
-
 import AddTodoForm from "./features/todo/AddTodoForm";
 import TasbihOrJaap from "./features/Jaap And Tasbih/TasbihOrJaap";
+import SignUp from "./features/login/SignUp";
 
 export const router = createBrowserRouter([
      {
@@ -51,8 +51,13 @@ export const router = createBrowserRouter([
 
             {
                 path : "tasbih",
-                element : <TasbihOrJaap/> ,
-            }
+                element : <TasbihOrJaap/>,
+            },  
+            
+            {
+                path : "signUp",
+                element : <SignUp/>
+            },
             
         ]
     },

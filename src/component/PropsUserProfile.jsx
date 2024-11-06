@@ -1,13 +1,7 @@
 
 
-export function PropsUserProfile(props) {
-    let profile = props.profile;
-    let username = props.username;
-    let contact = props.contact;
-   
+export function PropsUserProfile({profile,username,contact}) {
     
-    // let type = props.type;
-    // let placeholder = props.placeholder;
     return(
         <>
          

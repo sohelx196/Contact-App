@@ -21,7 +21,6 @@ function TodoApp() {
         </Link>
         </div>
 
-
         <div>
           <Outlet/>
         </div>

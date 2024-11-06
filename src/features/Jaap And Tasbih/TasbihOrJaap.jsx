@@ -34,7 +34,7 @@ function TasbihOrJaap() {
       <div className="m- text-center">
         <p className="text-white text-center">You have Prayed {initialVal} times</p>
         <h1 className="text-slate-200 text-5xl ">{initialVal}</h1>
-      </div>
+      </div>  
 </div>
 
     </div>

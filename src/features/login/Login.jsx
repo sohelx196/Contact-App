@@ -14,7 +14,7 @@ export function Login() {
            <div className=''>
               <InputField type="text" placeholder="Username"/>
               <InputField type="password" placeholder="Password"/>
-              <button className='text-white border p-2 rounded-lg m-3'>Login</button>
+              <button className='text-white border p-2 rounded-lg m-3' onClick={() => {alert("Successfully Logged In")}}>Login</button>
             </div>
 
                
