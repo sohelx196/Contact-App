@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import InputField from '../../component/InputField'
 
 function AddTodoForm() {
+
+
+
   return (
     <div>
         
@@ -13,11 +16,12 @@ function AddTodoForm() {
         </div>
 
         <div className='text-center m-3'>
-            <button className='border border-gray-300 rounded-lg text-white p-1 text-xs'>Add Todo</button>
+            <button className='border border-gray-300 rounded-lg text-white  text-xs hover:border-gray-500 hover:transition-all p-2'>
+              Add Todo
+            </button>
         </div>
-      
+         
        </form>
-
     </div>
   )
 }

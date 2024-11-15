@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 function TasbihOrJaap() {
-  const [initialVal, setewJaap] = useState(0);
+  const [initialVal, setnewJaap] = useState(0);
   const jaapVal = () => {
-    setewJaap(initialVal + 1);
+    setnewJaap(initialVal + 1);
   };
 
   const missedJaap = () => {
-      setewJaap(initialVal - 1);
+      setnewJaap(initialVal - 1);
   }
   
   return (

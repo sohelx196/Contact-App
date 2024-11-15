@@ -1,5 +1,5 @@
 import React from "react";
-import { UserDetail } from "../../component/UserDetail";
+
 import { Outlet, NavLink} from "react-router-dom";
 
 function Contact() {
@@ -7,7 +7,6 @@ function Contact() {
     <div>
 
       <div className="flex">
-
       <div>
       <div className="text-center">
         <NavLink to="showContact">
@@ -25,6 +24,7 @@ function Contact() {
           </button> 
         </NavLink>
       </div>
+      
       </div>
     
       <div className="my-6">

@@ -4,7 +4,6 @@ import "./App.css";
 import { Header } from "./component/Header";
 import { SideBar } from "./component/SideBar";
 import Footer from "./features/footer/Footer";
-
 import { Outlet} from "react-router-dom";
 
 function App() {
@@ -15,10 +14,11 @@ function App() {
       <div className="flex">
         <SideBar />
         <div className="w-full h-screen p-8">
-          <Outlet/>
+          <Outlet />
         </div>
       </div>    
       <Footer />
+      
     </>
   );
 }
