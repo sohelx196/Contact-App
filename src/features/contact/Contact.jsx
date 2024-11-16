@@ -2,6 +2,7 @@ import React from "react";
 
 import { Outlet, NavLink} from "react-router-dom";
 
+
 function Contact() {
   return (
     <div>
@@ -23,6 +24,8 @@ function Contact() {
             Add More 
           </button> 
         </NavLink>
+
+
       </div>
       
       </div>
@@ -33,6 +36,6 @@ function Contact() {
     </div>
 
   );
-}
+} 
 
 export default Contact;
