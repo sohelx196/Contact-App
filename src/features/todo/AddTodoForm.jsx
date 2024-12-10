@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function AddTodoForm() {
-  const [todo, setTodo] = useState('');
+  const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
 
   // Function to handle adding a new todo
@@ -11,10 +11,10 @@ function AddTodoForm() {
     if (todo.trim()) {
       const newTodos = [...todos, { text: todo, completed: false }];
       setTodos(newTodos);
-      setTodo('');
-      localStorage.setItem('todos', JSON.stringify(newTodos));
+      setTodo("");
+      localStorage.setItem("todos", JSON.stringify(newTodos));
     } else {
-      alert('Please enter a todo.');
+      alert("Please enter a todo.");
     }
   };
 
@@ -23,7 +23,7 @@ function AddTodoForm() {
     const newTodos = [...todos]; // Create a copy of the state
     newTodos.splice(index, 1); // Remove the todo at the specified index
     setTodos(newTodos);
-    localStorage.setItem('todos', JSON.stringify(newTodos));
+    localStorage.setItem("todos", JSON.stringify(newTodos));
   };
 
   // Function to handle editing a todo (optional)
@@ -31,19 +31,19 @@ function AddTodoForm() {
     const newTodos = [...todos];
     newTodos[index].text = newText; // Update text of the todo at the index
     setTodos(newTodos);
-    localStorage.setItem('todos', JSON.stringify(newTodos));
+    localStorage.setItem("todos", JSON.stringify(newTodos));
   };
 
   // Load todos from localStorage on component mount
   useEffect(() => {
-    const storedTodos = localStorage.getItem('todos');
+    const storedTodos = localStorage.getItem("todos");
     if (storedTodos) {
       setTodos(JSON.parse(storedTodos));
     }
   }, []);
 
   return (
-    <div>
+    <div className="">
       <form onSubmit={handleFormSubmit}>
         <input
           className="bg-transparent border text-center p-2 text-white rounded-md"
@@ -52,30 +52,32 @@ function AddTodoForm() {
           value={todo}
           onChange={(e) => setTodo(e.target.value)}
         />
-        <button type="submit" className="text-white border text-base bg-blue-950 p-2">
+        <button
+          type="submit"
+          className="text-white border text-base bg-blue-950 p-2"
+        >
           Add Todo
         </button>
       </form>
 
-      <ul className=' border mt-10 p-8 rounded-xl bg-slate-900'>
-        <h5 className='text-white'>Your Todos :</h5>
+      <ul className=" border mt-10 p-8 rounded-xl bg-slate-900 ">
+        <h5 className="text-white">Your Todos :</h5>
         {todos.map((todoItem, index) => (
-          <li key={index} className="text-white rounded text-center w-max p-2">
-            --> {todoItem.text}
+          <li key={index} className="text-white rounded text-center w-max p-2 ">
+           {todoItem.text}
             {/* Delete button */}
             <button
-              className="text-red-500 hover:text-red-700 ml-2 border rounded-lg p-1 text-base"
+              className="text-white hover:bg-slate-950 ml-2 border rounded-lg p-1 text-base"
               onClick={() => handleDeleteTodo(index)}
             >
-              Delete
+              Done
             </button>
-
             {/* Optional edit button (implementation provided) */}
             <button
-              className="text-blue-500 hover:text-blue-700 ml-2 border rounded-lg p-1 text-base"
+              className="text-white hover:bg-slate-950  ml-2 border rounded-lg p-1 text-base"
               onClick={() => {
                 // Prompt user for new text and handle edit
-                const newText = prompt('Edit Todo:', todoItem.text);
+                const newText = prompt("Edit Todo:", todoItem.text);
                 if (newText) {
                   handleEditTodo(index, newText);
                 }
